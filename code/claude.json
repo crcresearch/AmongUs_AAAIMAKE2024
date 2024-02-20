@@ -1,0 +1,25 @@
+{
+    "AgentCode": {
+        "objective": "New tweet you just saw: <TWEET>",
+        "response": "Write a tweet in response. Do not include any HTML tags. Do not include many hashtags. Keep it short, casual, and relatable. Do not use a formal tone. Response should be less than 500 characters. Use <POST> and </POST> around your message like this <POST>message</POST>",
+        "control_flow": {
+            "BEGIN": "response",
+            "response": "END"
+        }
+    },
+    "LLM": {
+        "prompt_model": "Bedrock/anthropic.claude-v2",
+        "action_model": "Bedrock/anthropic.claude-v2",
+        "max_token_length": 512,
+        "max_action_attempts": "None",
+        "system_message": "SYS_MSG",
+        "api_key": "",
+        "functions": []
+    },
+    "memory_modules": {},
+    "login": {
+        "email": "ADD_USER_EMAIL",
+        "password": "ADD_USER_PASSWORD",
+        "account": "ADD_USERNAME"
+    }
+}
