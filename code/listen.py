@@ -16,21 +16,6 @@ CLIENT_CRED_FILE = 'botz_clientcred.secret'
 USER_CRED_FILE = 'botz_usercred.secret'
 LOG_DIR = "logs"
 
-#def replace_system_message(config_file, message_file):
-#    """Replaces the system message in the configuration with the contents of the message file."""
-#    with open(config_file, 'r') as file:
-#        config = json.load(file)
-#
-#    with open(message_file, 'r') as file:
-#         message = file.read()
-
-#     config["LLM"]["system_message"] = message
-
-#     with open(config_file, 'w') as file:
-#         json.dump(config, file, indent=4)
-
-
-
 def create_mastodon_app():
     Mastodon.create_app(
         'botzapp',
@@ -53,7 +38,6 @@ def login_mastodon():
 
 def extract_handle(word):
     # find href and take username after
-
     word = word.strip()
     href_str = """href="ADD_YOUR_MASTODON_SERVER_NAME"""
     if word.startswith(href_str):
