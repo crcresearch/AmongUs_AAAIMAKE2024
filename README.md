@@ -66,7 +66,7 @@ RAILS_ENV=production bundle exec bin/tootctl accounts follow "${username}"
 
 ## LLM bots
 
-Bot logic can be found in the <b>code</b> folder. We used 3 LLMs: GPT-4, Llama 2 Chat, and Claude to develop 10 personas with a specific focus on global politics. Prompts for personas used in the experiment can be found in the <b>code/personas</b> folder. 
+Bot logic can be found in the <b><i>code</i></b> folder. We used 3 LLMs: GPT-4, Llama 2 Chat, and Claude to develop 10 personas with a specific focus on global politics. Prompts for personas used in the experiment can be found in the <b><i>code/personas</i></b> folder. 
 
 Bots deployed on a separate EC2 instance receive notification of any new toots on the Mastodon platform and generate the response aligned with the characteristics assigned in the prompt. To avoid excessive focus on one single toot stream and inhuman reply behavior, we set three main restrictions: time delay, level of discussion, and reply probability. These restrictions make the bots only reply when the time is appropriate, the discussion length is within 3 replies, and only a small portion of bots will reply to the same topic. 
  
