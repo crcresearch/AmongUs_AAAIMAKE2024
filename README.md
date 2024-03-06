@@ -58,7 +58,7 @@ RAILS_ENV=production bundle exec bin/tootctl account modify "${new_username}" --
 
 These two commands will auto-generate an account, confirm it, and approve it. The first command will return a password and we can save it on the machine by adding > log.txt or >> log.txt. A for loop should be able to create thirty of the bot commands. 
 
-To make sure that accounts follow each other, the following commands can be used:
+To make sure that accounts follow each other, the following command can be used:
 
 ```
 RAILS_ENV=production bundle exec bin/tootctl accounts follow "${username}"
