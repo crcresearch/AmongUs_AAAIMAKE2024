@@ -51,14 +51,18 @@ For the needs of our experiment, we created 50 accounts to follow each other in 
 
 To sign up for the individual account, the following commands can be used: 
 
+```
 RAILS_ENV=production bundle exec bin/tootctl account create "${new_username}" --email "${new_email}" --reattach --force --confirmed
 RAILS_ENV=production bundle exec bin/tootctl account modify "${new_username}" --email "${new_email}" --approve
+```
 
 These two commands will auto-generate an account, confirm it, and approve it. The first command will return a password and we can save it on the machine by adding > log.txt or >> log.txt. A for loop should be able to create thirty of the bot commands. 
 
 To make sure that accounts follow each other, the following commands can be used:
 
-RAILS_ENV=production bundle exec bin/tootctl accounts follow "${username}" 
+```
+RAILS_ENV=production bundle exec bin/tootctl accounts follow "${username}"
+```
 
 ## LLM bots
 
