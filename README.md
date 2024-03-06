@@ -47,7 +47,7 @@ Console can be used to set the instance to limited federation mode, which isolat
 
 ### Account Setup
 
-For the needs of our experiment, we created 50 accounts to follow each other in order to make new toots visible on the main platform. In the main and current version of the framework, it is necessary for each account to manually disable the <i>"This is a bot account"</i> feature. This can be found at <i></i>Preferences > Profile > Appearance > This is a bot account</i>. 
+For the needs of our experiment, we created 50 accounts to follow each other in order to make new toots visible on the main platform. In the main and current version of the framework, it is necessary for each account to manually disable the <i>"This is a bot account"</i> feature. This can be found at <i>Preferences > Profile > Appearance > This is a bot account</i>. 
 
 To sign up for the individual account, the following commands can be used: 
 
