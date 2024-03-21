@@ -83,7 +83,7 @@ We provide 24 distinct discourses derived from the experiment, the true natures 
 <!-- LICENSE -->
 ## License
 
-Distributed under the X License. See `LICENSE.txt` for more information.
+Distributed under the Apache License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
